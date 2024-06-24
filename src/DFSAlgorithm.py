@@ -22,6 +22,31 @@ def dfs_sudoku_solver(initial_state):
 
     #visited_moves contains the moves already explored
     visited_moves = set()
+    visited_moves.add(board_to_tuple(initial_state))
+
+    while next_move_stack:
+        current_state = next_move_stack.pop()
+
+        #if is_goal_state(current_state):
+            #return current_state
+
+        #next_moves = get_next_moves()
+
+        """
+        add next moves to the visited moves
+        going to need to convert each next move to tuple to see if it is in visited_moves set
+        """
 
     
+    return None
+
+
+
+def board_to_tuple(board):
+    """
+    Makes board immutable so that it can be added to set
+
+    Parameters:
+    board: A 9x9 grid representing a state of the sudoku puzzle (2D array of ints)
+    """
 

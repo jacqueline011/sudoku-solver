@@ -49,4 +49,4 @@ def board_to_tuple(board):
     Parameters:
     board: A 9x9 grid representing a state of the sudoku puzzle (2D array of ints)
     """
-
+    return tuple(tuple(row) for row in board)

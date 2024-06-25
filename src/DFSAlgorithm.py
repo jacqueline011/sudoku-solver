@@ -50,3 +50,14 @@ def board_to_tuple(board):
     board: A 9x9 grid representing a state of the sudoku puzzle (2D array of ints)
     """
     return tuple(tuple(row) for row in board)
+
+def get_next_moves(board):
+    """
+    Next possible moves for the solution
+
+    Parameters:
+    board: 2D array of ints to represent the game board for Sudoku
+
+    Returns:
+    List of moves
+    """

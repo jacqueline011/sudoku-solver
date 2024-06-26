@@ -80,3 +80,20 @@ def get_next_moves(board):
             stored_moves.append(new_board)
 
     return stored_moves
+
+def find_new_spot(board):
+    """
+    
+    Finds next available empty cell
+
+    Parameters:
+    board: 2D array of ints that represent the game board for Sudoku
+
+    Returns:
+    The tuple of (row, col) if it exists
+    """
+    for row in range(9):
+        for col in range(9):
+            if board[row][col] == 0:
+                return (row, col)
+    return None

@@ -5,6 +5,8 @@ This class uses Depth-First Search Algorithm and backtracking to
 solve the sudoku puzzle
 """
 
+from Validation import *
+
 def dfs_sudoku_solver(initial_state):
     """
     Solves the sudoku puzzle by using dfs
@@ -22,22 +24,22 @@ def dfs_sudoku_solver(initial_state):
 
     #visited_moves contains the moves already explored
     visited_moves = set()
-    visited_moves.add(board_to_tuple(initial_state))
 
     while next_move_stack:
         current_state = next_move_stack.pop()
+        visited_moves.add(board_to_tuple(current_state))
 
-        #if is_goal_state(current_state):
-            #return current_state
+        if found_solution(current_state):
+            return current_state
 
-        #next_moves = get_next_moves()
+        next_moves = get_next_moves(current_state)
 
-        """
-        add next moves to the visited moves
-        going to need to convert each next move to tuple to see if it is in visited_moves set
-        """
+        for board in next_moves:
+            board_tuple = board_to_tuple(board)
+            
+            if board_tuple not in visited_moves:
+                next_move_stack.append(board)
 
-    
     return None
 
 

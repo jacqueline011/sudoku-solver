@@ -63,3 +63,20 @@ def get_next_moves(board):
     Returns:
     List of moves
     """
+    next_empty = find_new_spot(board)
+
+    if not next_empty:
+        return[]
+    
+    row = next_empty
+    col = next_empty
+    stored_moves =[]
+
+    #Adds new valid board to stored_moves
+    for num in range(1, 10):
+        if is_valid_number(board, num, row, col):
+            new_board = [row[:] for row in board]
+            new_board[row][col] = num
+            stored_moves.append(new_board)
+
+    return stored_moves

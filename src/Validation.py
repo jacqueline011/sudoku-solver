@@ -1,8 +1,8 @@
 """
 Validation
 
-This class checks if the new number being inputted into the grid
-is valid. (Follows the Sudoku rules)
+This class contains all the validation rules associated to the sudoku rules (i.e. the number being inputted is valid
+in row, column, and 3x3 subgrid and that the solution found does not contail duplicates or any zeros)
 
 
 """
@@ -60,7 +60,32 @@ def found_solution(grid):
     
     """
     
-    # check if the grid is the solution
+    # check if row has no zeros and no duplicates
+    for row in grid:
+        if 0 in row or len(set(row)) != 9:
+            return False
+    
+    # Iterrate throuh columns
+    for column in range(9):
+        cvalues = []
+        for row in range(9):
+            cvalues.append(grid[row][column])
+        # Check if column has no duplicates
+        if len(set(cvalues)) != 9:
+            return False
+            
     
     
-    pass
+   # Iterrate through 3x3 subgrid
+    for srow in range(0, 9, 3):
+        for scol in range(0, 9, 3):
+            subgrid = []
+            for row in range(srow, srow + 3):
+                for column in range(scol, scol + 3):
+                    subgrid.append(grid[row][column])
+
+            # check if the subgrid has no duplicates
+            if len(set(subgrid)) != 9:
+                return False
+    
+    return True

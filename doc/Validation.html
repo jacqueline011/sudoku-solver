@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Validation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Validation</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A/users/steve/onedrive/desktop/aiclass/sudoku-solver/src/validation.py">c:/users/steve/onedrive/desktop/aiclass/sudoku-solver/src/validation.py</a></font></td></tr></table>
+    <p><tt>Validation<br>
+&nbsp;<br>
+This&nbsp;class&nbsp;contains&nbsp;all&nbsp;the&nbsp;validation&nbsp;rules&nbsp;associated&nbsp;to&nbsp;the&nbsp;sudoku&nbsp;rules&nbsp;(i.e.&nbsp;the&nbsp;number&nbsp;being&nbsp;inputted&nbsp;is&nbsp;valid<br>
+in&nbsp;row,&nbsp;column,&nbsp;and&nbsp;3x3&nbsp;subgrid&nbsp;and&nbsp;that&nbsp;the&nbsp;solution&nbsp;found&nbsp;does&nbsp;not&nbsp;contail&nbsp;duplicates&nbsp;or&nbsp;any&nbsp;zeros)</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-found_solution"><strong>found_solution</strong></a>(grid)</dt><dd><tt>Checks&nbsp;if&nbsp;the&nbsp;the&nbsp;grid&nbsp;is&nbsp;the&nbsp;solution<br>
+&nbsp;<br>
+Parameters:&nbsp;<br>
+grid:&nbsp;2D&nbsp;array,&nbsp;9x9&nbsp;Sudoku&nbsp;board<br>
+&nbsp;<br>
+Returns:<br>
+bool:&nbsp;True/False,&nbsp;whether&nbsp;the&nbsp;grid&nbsp;is&nbsp;the&nbsp;solution</tt></dd></dl>
+ <dl><dt><a name="-is_valid_number"><strong>is_valid_number</strong></a>(grid, num, row, column)</dt><dd><tt>Check&nbsp;if&nbsp;number&nbsp;is&nbsp;valid&nbsp;under&nbsp;the&nbsp;Sudoku&nbsp;rules<br>
+&nbsp;<br>
+Parameters:<br>
+grid:&nbsp;9x9&nbsp;Sudoku&nbsp;grid&nbsp;(2D&nbsp;array)<br>
+num:&nbsp;the&nbsp;new&nbsp;number&nbsp;being&nbsp;inputted&nbsp;into&nbsp;grid<br>
+row:&nbsp;the&nbsp;current&nbsp;row&nbsp;being&nbsp;checked<br>
+column:&nbsp;the&nbsp;current&nbsp;column&nbsp;being&nbsp;checked<br>
+&nbsp;<br>
+Returns:<br>
+bool:&nbsp;True/False,&nbsp;whether&nbsp;the&nbsp;number&nbsp;is&nbsp;valid&nbsp;or&nbsp;not</tt></dd></dl>
+</td></tr></table>
+</body></html>

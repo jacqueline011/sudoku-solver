@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module DFSAlgorithm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>DFSAlgorithm</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A/users/steve/onedrive/desktop/aiclass/sudoku-solver/src/dfsalgorithm.py">c:/users/steve/onedrive/desktop/aiclass/sudoku-solver/src/dfsalgorithm.py</a></font></td></tr></table>
+    <p><tt>DFS&nbsp;Algorithm<br>
+&nbsp;<br>
+This&nbsp;class&nbsp;uses&nbsp;Depth-First&nbsp;Search&nbsp;Algorithm&nbsp;and&nbsp;backtracking&nbsp;to<br>
+solve&nbsp;the&nbsp;sudoku&nbsp;puzzle</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-board_to_tuple"><strong>board_to_tuple</strong></a>(board)</dt><dd><tt>Makes&nbsp;board&nbsp;immutable&nbsp;so&nbsp;that&nbsp;it&nbsp;can&nbsp;be&nbsp;added&nbsp;to&nbsp;set<br>
+&nbsp;<br>
+Parameters:<br>
+board:&nbsp;A&nbsp;9x9&nbsp;grid&nbsp;representing&nbsp;a&nbsp;state&nbsp;of&nbsp;the&nbsp;sudoku&nbsp;puzzle&nbsp;(2D&nbsp;array&nbsp;of&nbsp;ints)</tt></dd></dl>
+ <dl><dt><a name="-dfs_sudoku_solver"><strong>dfs_sudoku_solver</strong></a>(initial_state)</dt><dd><tt>Solves&nbsp;the&nbsp;sudoku&nbsp;puzzle&nbsp;by&nbsp;using&nbsp;dfs<br>
+&nbsp;<br>
+Parameters:<br>
+initial_state:&nbsp;A&nbsp;9x9&nbsp;grid&nbsp;representing&nbsp;the&nbsp;inital&nbsp;state&nbsp;of&nbsp;the&nbsp;sudoku&nbsp;puzzle&nbsp;(2D&nbsp;array&nbsp;of&nbsp;ints)<br>
+&nbsp;<br>
+Return:<br>
+goal_state:&nbsp;A&nbsp;9x9&nbsp;grid&nbsp;representing&nbsp;the&nbsp;solved&nbsp;sudoku&nbsp;puzzle&nbsp;(2D&nbsp;array&nbsp;of&nbsp;ints)</tt></dd></dl>
+ <dl><dt><a name="-find_new_spot"><strong>find_new_spot</strong></a>(board)</dt><dd><tt>Finds&nbsp;next&nbsp;available&nbsp;empty&nbsp;cell<br>
+&nbsp;<br>
+Parameters:<br>
+board:&nbsp;2D&nbsp;array&nbsp;of&nbsp;ints&nbsp;that&nbsp;represent&nbsp;the&nbsp;game&nbsp;board&nbsp;for&nbsp;Sudoku<br>
+&nbsp;<br>
+Returns:<br>
+The&nbsp;tuple&nbsp;of&nbsp;(row,&nbsp;col)&nbsp;if&nbsp;it&nbsp;exists</tt></dd></dl>
+ <dl><dt><a name="-get_next_moves"><strong>get_next_moves</strong></a>(board)</dt><dd><tt>Next&nbsp;possible&nbsp;moves&nbsp;for&nbsp;the&nbsp;solution<br>
+&nbsp;<br>
+Parameters:<br>
+board:&nbsp;2D&nbsp;array&nbsp;of&nbsp;ints&nbsp;to&nbsp;represent&nbsp;the&nbsp;game&nbsp;board&nbsp;for&nbsp;Sudoku<br>
+&nbsp;<br>
+Returns:<br>
+List&nbsp;of&nbsp;moves</tt></dd></dl>
+</td></tr></table>
+</body></html>
